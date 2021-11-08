@@ -4,8 +4,8 @@ int main(){
     printf("Enter a number: ");
     scanf("%d", &n);
     while(n!=0){
-        number = number * 10;
-        number = n % 10 + number;
+        number = number % 10;
+        number = n * 10 + number;
         n = n/10;
     }
     printf("%d", number);
